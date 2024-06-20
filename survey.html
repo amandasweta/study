@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .survey-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h2, h3 {
+            text-align: center;
+            color: #000;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .checkbox-options label,
+        .radio-options label {
+            margin-bottom: 10px;
+        }
+        textarea, input[type="text"], input[type="checkbox"], input[type="radio"] {
+            width: calc(100% - 16px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 10px auto;
+        }
+        button[type="submit"] {
+            background-color: #000;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto 0;
+            font-size: 16px;
+        }
+        button[type="submit"]:hover {
+            background-color: #333;
+        }
+        .survey-section:last-of-type {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+   
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+     <input type="hidden" name="access_key" value="ac354e94-f0ad-4290-958c-882f03fee5e1">
+    
+ 
+  <div class="survey-section" id="classical">
+       
+       <audio id="classicalMusic" loop>
+        <source src="music/spotifydown.com%20-%20Eine%20kleine%20Nachtmusik%20K.%20525_%20Allegro.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+       </audio>
+       
+        <h2>Genre: Classical</h2>
+        
+        <div>
+            <h3>Question 1: Task Performance</h3>
+            <p>You will have 20 seconds to type the following sentence accurately. Please type it exactly as it appears:</p>
+            <p><em>"In the depths of winter, I discovered an invincible summer within. Through frosty mornings and silent nights, its warmth endured. Each icy breath whispered of resilience and quiet strength, thawing even the coldest doubts. As snowflakes danced, I embraced the eternal flame flickering inside."</em></p>
+            <textarea id="typingResponse1" name="typingResponse1" rows="4" required></textarea>
+        </div>
+    </div>
+
+    <div class="survey-section" id="classical">
+        <div>
+            <h3>Question 2: Emotional Response</h3>
+            <p>View the image below and write one word that best describes how this image makes you feel.</p>
+            <img src="images/image1.png" alt="Image Description" style="max-width: 55%; height: auto;">
+            <br>
+            <input type="text" id="emotionalResponse1" name="emotionalResponse1" placeholder="Type your emotional response here1" required>
+        </div>
+    </div>
+
+    <div class="survey-section" id="classical">
+    <div>
+        <h3>Question 3: Attention Check</h3>
+        <p>Which options below are similar to <strong>HOMEWRECKERAT3906</strong>? (Tick all that apply)</p>
+        <div class="checkbox-options">
+            <label>
+                <input type="checkbox" name="similarOptions[]" value="Option1">
+                HOMEWRECK3RATE906
+            </label><br>
+            <label>
+                <input type="checkbox" name="similarOptions[]" value="Option2">
+                HOM3WR3CK3RAT3906
+            </label><br>
+            <label>
+                <input type="checkbox" name="similarOptions[]" value="Option3">
+                HOMERECEKERAT39O6
+            </label><br>
+            <label>
+                <input type="checkbox" name="similarOptions[]" value="Option4">
+                HOMEWRECKERAT3906
+            </label><br>
+            <label>
+                <input type="checkbox" name="similarOptions[]" value="Option5">
+                HOMEWRECKESAT3906
+            </label><br>
+        </div>
+    </div>
+</div>
+
+<div class="survey-section" id="classical">
+    <div>
+        <h3>Question 4: Information Processing</h3>
+        <p>The sun dipped below the horizon, painting the sky in hues of orange and pink. A gentle breeze rustled through the leaves of the ancient oak tree, casting dappled shadows on the lush green grass. Nearby, a small brook murmured softly, its waters glistening in the fading light.</p>
+        
+        <br>
+        
+        <p><strong>Based on the passage, what natural element contributes most to the serene atmosphere described?</strong></p>
+        <div class="radio-options">
+            <input type="radio" id="1element1" name="naturalElement" value="Birds chirping and thunder rumbling">
+            <label for="1element1">Birds chirping and thunder rumbling</label><br>
+            
+            <input type="radio" id="1element2" name="naturalElement" value="Moonlight and frost-covered leaves">
+            <label for="1element2">Moonlight and frost-covered leaves</label><br>
+            
+            <input type="radio" id="1element3" name="naturalElement" value="Sunlight and breeze">
+            <label for="1element3">Sunlight and breeze</label><br>
+        </div>
+        
+        <br>
+        
+        <p><strong>What effect does the brook have on the scene described in the passage?</strong></p>
+        <div class="radio-options">
+            <input type="radio" id="1effect1" name="brookEffect" value="It makes the grass lush.">
+            <label for="1effect1">It makes the grass lush.</label><br>
+            
+            <input type="radio" id="1effect2" name="brookEffect" value="It adds to the soothing ambiance.">
+            <label for="1effect2">It adds to the soothing ambiance.</label><br>
+            
+            <input type="radio" id="1effect3" name="brookEffect" value="It reflects sunlight.">
+            <label for="1effect3">It reflects sunlight.</label><br>
+        </div>
+    </div>
+</div>
+
+    <br>
+
+
+
+    <div class="survey-section" id="pop">
+       
+
+    <audio id="popMusic" loop>
+        <source src="music/spotifydown.com%20-%20Heat%20Waves.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+       
+        <h2>Genre: Pop Music</h2>
+        
+        <div>
+            <h3>Question 1: Task Performance</h3>
+            <p>You will have 20 seconds to type the following sentence accurately:</p>
+            <p><em>"The sunlit meadow beckoned with its vibrant hues, weaving a tapestry of life and renewal. Amongst the blossoms and tall grasses, whispers of ancient tales carried on the breeze, painting dreams upon the canvas of the sky."</em></p>
+            <textarea id="typingResponse2" name="typingResponse2" rows="4" required></textarea>
+        </div>
+    </div>
+
+    <div class="survey-section" id="pop">
+        <div>
+            <h3>Question 2: Emotional Response</h3>
+            <p>View the image below and write one word that best describes how this image makes you feel.</p>
+            <img src="images/image2.png" alt="Image Description" style="max-width: 55%; height: auto;">
+            <br>
+            <input type="text" id="emotionalResponse2" name="emotionalResponse2" placeholder="Type your emotional response here2" required>
+        </div>
+    </div>
+
+    <div class="survey-section" id="pop">
+    <div>
+        <h3>Question 3: Attention Check</h3>
+        <p>Which options below are similar to <strong>QUICKFOXJUMPS13</strong>? (Tick all that apply)</p>
+        <div class="checkbox-options">
+            <label>
+                <input type="checkbox" name="similarOptions[]" value="Option1">
+                QUICKFOXJUMPSI3
+            </label><br>
+            <label>
+                <input type="checkbox" name="similarOptions[]" value="Option2">
+                QUICKFOXJUMPS18
+            </label><br>
+            <label>
+                <input type="checkbox" name="similarOptions[]" value="Option3">
+                QUlCKF0XJUMP513
+            </label><br>
+            <label>
+                <input type="checkbox" name="similarOptions[]" value="Option4">
+                QUICKFOXJVMPS13
+            </label><br>
+            <label>
+                <input type="checkbox" name="similarOptions[]" value="Option5">
+                QUICKFOXJUMPS15
+            </label><br>
+        </div>
+    </div>
+</div>
+
+<div class="survey-section" id="pop">
+    <div>
+        <h3>Question 4: Information Processing</h3>
+        <p>The moon cast its silvery glow over the tranquil lake, shimmering with reflections of distant stars. A canopy of ancient trees whispered in the gentle breeze, their branches swaying in rhythmic harmony. Nearby, a chorus of nocturnal creatures serenaded the night with melodies of solitude and mystery.</p>
+        
+        <br>
+        
+        <p><strong>Based on the passage, what contributes most to the serene atmosphere described?</strong></p>
+        <div class="radio-options">
+            <input type="radio" id="2element1" name="naturalElement" value="Starlit sky and nocturnal sounds">
+            <label for="2element1">Starlit sky and nocturnal sounds</label><br>
+            
+            <input type="radio" id="2element2" name="naturalElement" value="Whispering trees and gentle breeze">
+            <label for="2element2">Whispering trees and gentle breeze</label><br>
+            
+            <input type="radio" id="2element3" name="naturalElement" value="Tranquil lake and silvery moonlight">
+            <label for="2element3">Tranquil lake and silvery moonlight</label><br>
+        </div>
+        
+        <br>
+        
+        <p><strong>What effect does the chorus of nocturnal creatures have on the scene?</strong></p>
+        <div class="radio-options">
+            <input type="radio" id="2effect1" name="brookEffect" value="It creates a sense of solitude.">
+            <label for="2effect1">It creates a sense of solitude.</label><br>
+            
+            <input type="radio" id="2effect2" name="brookEffect" value="It adds mystery to the atmosphere.">
+            <label for="2effect2">It adds mystery to the atmosphere.</label><br>
+            
+            <input type="radio" id="2effect3" name="brookEffect" value="It reflects moonlight.">
+            <label for="2effect3">It reflects moonlight.</label><br>
+        </div>
+    </div>
+</div>
+
+<br>
+
+    <div class="survey-section" id="lofi">
+       
+        <audio id="lofiMusic" loop>
+        <source src="music/spotifydown.com%20-%20Everything.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+        <h2>Genre: Lofi/Ambient Music</h2>
+        
+        <div>
+            <h3>Question 1: Task Performance</h3>
+            <p>You will have 20 seconds to type the following sentence accurately:</p>
+            <p><em>"In the heart of the old city, cobblestone streets whispered tales of forgotten epochs, where shadows danced with memories amidst the flickering lamplight. Through narrow alleys and hidden courtyards, echoes of distant melodies lingered, weaving a timeless symphony."</em></p>
+            <textarea id="typingResponse3" name="typingResponse3" rows="4" required></textarea>
+        </div>
+    </div>
+
+    <div class="survey-section">
+        <div>
+            <h3>Question 2: Emotional Response</h3>
+            <p>View the image below and write one word that best describes how this image makes you feel.</p>
+            <img src="images/image3.png" alt="Image Description" style="max-width: 55%; height: auto;">
+            <br>
+            <input type="text" id="emotionalResponse3" name="emotionalResponse3" placeholder="Type your emotional response here3" required>
+        </div>
+    </div>
+
+    <div class="survey-section">
+    <div>
+        <h3>Question 3: Attention Check</h3>
+        <p>Which options below are similar to <strong>JUMPINGCATS123</strong>? (Tick all that apply)</p>
+        <div class="checkbox-options">
+            <label>
+                <input type="checkbox" name="similarOptions[]" value="Option1">
+               JUMPINGCATS123
+            </label><br>
+            <label>
+                <input type="checkbox" name="similarOptions[]" value="Option2">
+               JUMPINGCATS123
+            </label><br>
+            <label>
+                <input type="checkbox" name="similarOptions[]" value="Option3">
+               JUMPINCGATS123
+            </label><br>
+            <label>
+                <input type="checkbox" name="similarOptions[]" value="Option4">
+                JUMPINGCATS123
+            </label><br>
+            <label>
+                <input type="checkbox" name="similarOptions[]" value="Option5">
+               JUMPINCATS1123
+            </label><br>
+        </div>
+    </div>
+</div>
+
+<div class="survey-section">
+    <div>
+        <h3>Question 4: Information Processing</h3>
+        <p>Beneath the canopy of ancient oaks, the murmuring brook meandered through mossy stones, reflecting the hues of twilight. The air was alive with the scent of wildflowers, each petal gently kissed by the evening dew. Overhead, a symphony of cicadas serenaded the fading sun, their cadence echoing through the tranquil glade.</p>
+        
+        <br>
+        
+        <p><strong>What contributes most to the tranquil atmosphere described?</strong></p>
+        <div class="radio-options">
+            <input type="radio" id="3element1" name="naturalElement" value="Murmuring brook and mossy stones">
+            <label for="3element1">Murmuring brook and mossy stones</label><br>
+            
+            <input type="radio" id="3element2" name="naturalElement" value="Scent of wildflowers and evening dew">
+            <label for="3element2">Scent of wildflowers and evening dew</label><br>
+            
+            <input type="radio" id="3element3" name="naturalElement" value="Symphony of cicadas and fading sun">
+            <label for="3element3">Symphony of cicadas and fading sun</label><br>
+        </div>
+        
+        <br>
+        
+        <p><strong>What role do the cicadas play in the scene?</strong></p>
+        <div class="radio-options">
+            <input type="radio" id="3effect1" name="brookEffect" value="They enhance the tranquility.">
+            <label for="3effect1">They enhance the tranquility.</label><br>
+            
+            <input type="radio" id="3effect2" name="brookEffect" value="They signal the onset of night.">
+            <label for="3effect2">They signal the onset of night.</label><br>
+            
+            <input type="radio" id="3effect3" name="brookEffect" value="They harmonize with the brook.">
+            <label for="3effect3">They harmonize with the brook.</label><br>
+        </div>
+    </div>
+</div>
+
+<br>
+
+
+    <div class="survey-section" id="rock">
+       
+        <audio id="rockMusic" loop>
+        <source src="music/spotifydown.com%20-%20Smells%20Like%20Teen%20Spirit.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+        <h2>Genre: Rock Music</h2>
+        
+        <div>
+            <h3>Question 1: Task Performance</h3>
+            <p>You will have 20 seconds to type the following sentence accurately:</p>
+         <p><em>"Under the starlit canopy, whispers of ancient tales floated gently on the night breeze, weaving dreams that shimmered with the promise of long-forgotten realms. Each rustling leaf echoed with the secrets of centuries past, as the moonlight traced patterns of wonder across the velvet sky."</em></p>
+
+            <textarea id="typingResponse4" name="typingResponse4" rows="4" required></textarea>
+        </div>
+    </div>
+
+    <div class="survey-section">
+        <div>
+            <h3>Question 2: Emotional Response</h3>
+            <p>View the image below and write one word that best describes how this image makes you feel.</p>
+            <img src="images/image4.png" alt="Different Image Description" style="max-width: 55%; height: auto;">
+            <br>
+            <input type="text" id="emotionalResponse4" name="emotionalResponse4" placeholder="Type your emotional response here4" required>
+        </div>
+    </div>
+
+    <div class="survey-section">
+        <div>
+            <h3>Question 3: Attention Check</h3>
+            <p>Which options below are similar to <strong>FLYINGBIRDS456</strong>? (Tick all that apply)</p>
+            <div class="checkbox-options">
+                <label>
+                    <input type="checkbox" name="similarOptions[]" value="Option1">
+                    FLYINGBIRDS456
+                </label><br>
+                <label>
+                    <input type="checkbox" name="similarOptions[]" value="Option2">
+                    FLYINGBIRDS456
+                </label><br>
+                <label>
+                    <input type="checkbox" name="similarOptions[]" value="Option3">
+                    FLYINGBIRDS456
+                </label><br>
+                <label>
+                    <input type="checkbox" name="similarOptions[]" value="Option4">
+                   FLYINGBIRDS456
+                </label><br>
+                <label>
+                    <input type="checkbox" name="similarOptions[]" value="Option5">
+                    FLYINGBIRDS456
+                </label><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="survey-section">
+        <div>
+            <h3>Question 4: Information Processing</h3>
+            <p>Beneath the shimmering waterfall, the ancient stones whispered tales of forgotten heroes, where time stood still amidst the gentle rustling of leaves. Above, the moonlight bathed the scene in a soft glow, casting shadows that danced with the secrets of the night.</p>
+            
+            <br>
+            
+            <p><strong>What contributes most to the mystical atmosphere described?</strong></p>
+            <div class="radio-options">
+                <input type="radio" id="4element1" name="naturalElement" value="Shimmering waterfall and ancient stones">
+                <label for="4element1">Shimmering waterfall and ancient stones</label><br>
+                
+                <input type="radio" id="4element2" name="naturalElement" value="Moonlight and soft glow">
+                <label for="4element2">Moonlight and soft glow</label><br>
+                
+                <input type="radio" id="4element3" name="naturalElement" value="Gentle rustling of leaves">
+                <label for="4element3">Gentle rustling of leaves</label><br>
+            </div>
+            
+            <br>
+            
+            <p><strong>What role do the shadows play in the scene?</strong></p>
+            <div class="radio-options">
+                <input type="radio" id="4effect1" name="brookEffect" value="They deepen the mystery.">
+                <label for="4effect1">They deepen the mystery.</label><br>
+                
+                <input type="radio" id="4effect2" name="brookEffect" value="They reveal hidden truths.">
+                <label for="4effect2">They reveal hidden truths.</label><br>
+                
+                <input type="radio" id="4effect3" name="brookEffect" value="They echo the past.">
+                <label for="4effect3">They echo the past.</label><br>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+
+    <div class="survey-section">
+        <h2>Silence (Control Group)</h2>
+        
+        <div>
+            <h3>Question 1: Task Performance</h3>
+            <p>Please type the following sentence accurately within 20 seconds:</p>
+        <p><em>"In the quiet of dawn, melodies of forgotten whispers embraced the stillness, painting the sky with hues of melancholy and hope, while gentle rays of sunlight kissed the horizon. The dew-laden grass shimmered with the promise of a new day, as shadows retreated and birdsong filled the awakening air."</em></p>
+
+
+            <textarea id="typingResponse5" name="typingResponse5" rows="4" required></textarea>
+        </div>
+    </div>
+
+    <div class="survey-section">
+        <div>
+            <h3>Question 2: Emotional Response</h3>
+            <p>View the image below and write one word that best describes how this image makes you feel.</p>
+            <img src="images/image5.png" alt="Different Image Description" style="max-width: 55%; height: auto;">
+            <br>
+            <input type="text" id="emotionalResponse5" name="emotionalResponse5" placeholder="Type your emotional response here5" required>
+        </div>
+    </div>
+
+    <div class="survey-section">
+        <div>
+            <h3>Question 3: Attention Check</h3>
+            <p>Which options below are similar to <strong>MOUNTAINPEAK789</strong>? (Tick all that apply)</p>
+            <div class="checkbox-options">
+                <label>
+                    <input type="checkbox" name="similarOptions[]" value="Option1">
+                    MOUNTAINPEAK789
+                </label><br>
+                <label>
+                    <input type="checkbox" name="similarOptions[]" value="Option2">
+                    MOUNTAINPEAK789
+                </label><br>
+                <label>
+                    <input type="checkbox" name="similarOptions[]" value="Option3">
+                    MOUNTAIMPEAK78
+                </label><br>
+                <label>
+                    <input type="checkbox" name="similarOptions[]" value="Option4">
+                    MOUNTAINPEAK790
+                </label><br>
+                <label>
+                    <input type="checkbox" name="similarOptions[]" value="Option5">
+                    M0UNTAlNPEAK789
+                </label><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="survey-section">
+        <div>
+            <h3>Question 4: Information Processing</h3>
+            <p>Beneath the ancient willow tree, whispers of forgotten tales mingled with the gentle flow of the river, painting dreams that shimmered with the echoes of distant lands.</p>
+            
+            <br>
+            
+            <p><strong>What contributes most to the magical atmosphere described?</strong></p>
+            <div class="radio-options">
+                <input type="radio" id="5element1" name="naturalElement" value="Ancient willow tree and gentle flow of the river">
+                <label for="5element1">Ancient willow tree and gentle flow of the river</label><br>
+                
+                <input type="radio" id="5element2" name="naturalElement" value="Whispers of forgotten tales">
+                <label for="5element2">Whispers of forgotten tales</label><br>
+                
+                <input type="radio" id="5element3" name="naturalElement" value="Dreams shimmering with echoes">
+                <label for="5element3">Dreams shimmering with echoes</label><br>
+            </div>
+            
+            <br>
+            
+            <p><strong>What role do the dreams play in the scene?</strong></p>
+            <div class="radio-options">
+                <input type="radio" id="5effect1" name="brookEffect" value="They inspire wanderlust.">
+                <label for="5effect1">They inspire wanderlust.</label><br>
+                
+                <input type="radio" id="5effect2" name="brookEffect" value="They reflect hidden truths.">
+                <label for="5effect2">They reflect hidden truths.</label><br>
+                
+                <input type="radio" id="5effect3" name="brookEffect" value="They evoke nostalgia.">
+                <label for="5effect3">They evoke nostalgia.</label><br>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    
+    <button type="submit">Submit</button>
+            
+    </form>
+    
+ <script>
+    // Function to play or pause music based on scroll position
+    function handleScroll() {
+        const sections = document.querySelectorAll('.survey-section');
+        const audioElements = {
+            'classical': document.getElementById('classicalMusic'),
+            'pop': document.getElementById('popMusic'),
+            'lofi': document.getElementById('lofiMusic'),
+            'rock': document.getElementById('rockMusic')
+        };
+
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            const sectionId = section.getAttribute('id');
+            if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                // Pause all other audios
+                Object.values(audioElements).forEach(audio => audio.pause());
+                // Play current section's audio
+                if (audioElements[sectionId]) {
+                    audioElements[sectionId].play();
+                }
+            }
+        });
+    }
+
+    // Attach handleScroll function to window scroll event
+    window.addEventListener('scroll', handleScroll);
+
+    // Pause all audios when the page unloads
+    window.addEventListener('beforeunload', () => {
+        Object.values(audioElements).forEach(audio => audio.pause());
+    });
+</script>
+
+    
+    
+
+
+</body>
+
+
+</html>
